@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains site_api_key.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function site_api_key_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the site_api_key module.
+    case 'help.page.site_api_key':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This module will allow the storage of a site-wide API key.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

@@ -1,0 +1,5 @@
+services:
+  site_api_key.route_subscriber:
+    class: Drupal\site_api_key\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
