@@ -3,4 +3,10 @@ type: module
 description: 'This module will allow the storage of a site-wide API key.'
 core_version_requirement: ^8.8.9 || ^9
 package: 'Custom'
-#config:
+#config: 
+dependencies:
+  - rest
+  - restui
+  - hal
+  - basic_auth
+

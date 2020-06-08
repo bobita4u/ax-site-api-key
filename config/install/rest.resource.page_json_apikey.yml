@@ -1,0 +1,10 @@
+id: page_json_apikey
+plugin_id: page_json_apikey
+granularity: method
+configuration:
+  GET:
+    supported_formats:
+      - json
+    supported_auth:
+      - basic_auth
+      - cookie
